@@ -1,3 +1,5 @@
+extern crate vowel_utils;
+
 use std::env;
 
 fn main() {
@@ -6,12 +8,12 @@ fn main() {
 
     let text = match arguments.next() {
         Some(arg) => arg,
-        None => String::from(""),
+        None => {
+            println!("no arguments received.");
+            return
+        },
     };
- 
-    for character in text.as_str().chars(){
-        println!("Match to vowels in the english language and map to a hash table");
-        println!("{}", character);
-    }
-//    println!("{}", text);
+
+    let vowel_amount = vowel_utils::count(&text);
+    println!("{}", vowel_amount);
 }

@@ -1,7 +1,6 @@
 [package]
-name = "vowel_counter"
+name = "vowel_utils"
 version = "0.1.0"
 authors = ["Kevin Exton <068ant@gmail.com>"]
 
 [dependencies]
-vowel_utils = { path = "vowel_utils" }

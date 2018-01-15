@@ -1,4 +1,11 @@
 [[package]]
 name = "vowel_counter"
 version = "0.1.0"
+dependencies = [
+ "vowel_utils 0.1.0",
+]
+
+[[package]]
+name = "vowel_utils"
+version = "0.1.0"
 
