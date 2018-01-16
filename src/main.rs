@@ -14,6 +14,12 @@ fn main() {
         },
     };
 
-    let vowel_amount = vowel_utils::count(&text);
-    println!("{}", vowel_amount);
+    let (vowel_amount, counter) = vowel_utils::count(&text);
+    println!("there are {} vowels", vowel_amount);
+    println!("a: {}, e: {}, i: {}, o: {}, u: {}",
+             counter.a,
+             counter.e,
+             counter.i,
+             counter.o,
+             counter.u);
 }
